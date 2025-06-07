@@ -11,6 +11,7 @@ classDiagram
         +String lastName
         +String email
         +String phone
+        +String avatar
         +String bio
         -String password
         +String roles
