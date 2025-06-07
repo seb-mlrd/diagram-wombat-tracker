@@ -5,7 +5,7 @@ title: Wombat Tracker
 ---
 
 classDiagram
-    class User {
+    class ProfilService {
         +int id
         +String firstName
         +String lastName
@@ -36,9 +36,9 @@ classDiagram
         +fromJson()
     }
 
-    User "1" -- "*" FriendRelation : isFriend
-    User --* Stats : has
-    ManageUser ..> User : manages
+    ProfilService "1" -- "*" FriendRelation : isFriend
+    ProfilService --* Stats : has
+    ManageUser ..> ProfilService : manages
 
     class FriendRelation {
         +int id
