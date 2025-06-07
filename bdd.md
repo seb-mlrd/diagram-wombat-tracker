@@ -1,14 +1,15 @@
 ```mermaid
 erDiagram
-    USER ||--o{ STATS : has
-    USER ||--o{ FRIENDRELATION : is_friend
-    USER ||--o{ FRIENDRELATION : is_requester
-    USER {
+    PROFIL ||--o{ STATS : has
+    PROFIL ||--o{ FRIENDRELATION : is_friend
+    PROFIL ||--o{ FRIENDRELATION : is_requester
+    PROFIL {
         int id
         String firstName
         String lastName
         String email
         String phone
+        String avatar
         String bio
         String password
         String roles
